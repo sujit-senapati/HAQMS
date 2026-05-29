@@ -780,10 +780,10 @@ export default function Dashboard() {
               </p>
 
               <div className="space-y-6">
-                <div className="p-4 rounded-xl border border-teal-500/25 bg-teal-500/10 text-slate-700 dark:text-slate-300 text-xs leading-5">
+                {/* <div className="p-4 rounded-xl border border-teal-500/25 bg-teal-500/10 text-slate-700 dark:text-slate-300 text-xs leading-5">
                   <strong>Token Generation Engine Note:</strong> Direct arrivals bypass appointments. The token engine automatically fetches the current days maximum token size and increments.
                   <span className="block mt-1 font-bold text-rose-500 uppercase tracking-wide">Warning: Vulnerable to check-in race conditions!</span>
-                </div>
+                </div> */}
 
                 <div className="space-y-4 text-xs font-semibold text-slate-700 dark:text-slate-300">
                   <div>
@@ -1065,11 +1065,11 @@ export default function Dashboard() {
                   {/* Reporting details benchmark */}
                   <div className="flex items-center gap-3 p-3 bg-amber-500/10 text-slate-700 dark:text-slate-300 text-xs rounded-lg border border-amber-500/20 leading-5">
                     <Clock className="h-5 w-5 text-amber-500 shrink-0" />
-                    <div>
+                    {/* <div>
                       <strong>Performance Diagnostic:</strong> API execution resolved in{' '}
                       <span className="font-bold text-amber-500">{adminReportData.timeTakenMs} ms</span>.
                       Sequential nested database calls loops reduce throughput. Optimization using Promise.all or single join aggregate is required.
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Summary widgets */}
@@ -1165,7 +1165,8 @@ export default function Dashboard() {
               </button>
             </div>
 
-            <div className="p-3 bg-rose-500/10 text-rose-500 text-xs rounded-lg border border-rose-500/20 font-semibold leading-5 flex gap-3">
+            {/* SQL Vulnerability alert fixed in the backend */}
+            {/* <div className="p-3 bg-rose-500/10 text-rose-500 text-xs rounded-lg border border-rose-500/20 font-semibold leading-5 flex gap-3">
               <ShieldAlert className="h-5 w-5 shrink-0" />
               <div>
                 <strong>SQL Vulnerability alert:</strong> This search executes raw interpolation:
@@ -1174,7 +1175,7 @@ export default function Dashboard() {
                 </code>
                 Can be audited by inputting standard SQL injection strings to leak full user login lists.
               </div>
-            </div>
+            </div> */}
 
             {/* Doctors Result List */}
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
